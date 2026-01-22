@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <style type="text/css">
+      body{
+        background-color:rgb(189, 169, 80);
+        color:rgb(0, 0, 0);
+      }
+    </style>
+</head>
+
+<body>
+    <form>
+        <form action="enviar.php method="post>
+
+            <fieldset>
+              <legend>Datos personales</legend>
+          
+              Nombre:
+              <input type="text"
+              name="nombre"
+              span class="rojo"><br>
+          
+              Correo electrónico:
+              <input type="email"
+              name="mail"
+              size="28"
+              required
+              autocomplete
+              placeholder="nombre@servidor.com"
+              title="Escriba su correo electrónico para 
+              poder comunicarnos con Ud.lo antes posible"/>
+              <br>
+            </fieldset>
+          
+            <fieldset>
+               <legend>Datos del proyecto</legend>
+          
+               Breve descripción del proyecto:<br>
+               <textarea name="descripcion"></textarea><p>
+          
+               Estado actual del proyecto:<br>
+               <input type="radio"
+               name="proceso"
+               value="sinplantear"
+               checked/>
+               En fase de planteamiento
+          
+               <input type="radio"
+               name="proceso"
+               value="enplanificacion"/>
+               En fase de planificación
+          
+               <input type="radio"
+               name="proceso"
+               value="enejecucion"/>
+               En ejecución
+          
+               <input type="radio"
+               name="proceso"
+               value="finalizado"/>
+               Ya finalizado<p>
+          
+               Presupuesto aproximado (en €):  
+               <input type="number"
+               name="presupuesto"
+               value="1000"
+               min="150"
+               max="30000"
+               step="50">
+            </fieldset>
+              
+               <input id="boton_enviar"
+               type="submit"
+               value="Enviar">
+          
+          </form>
+        
+        
+
+
+
+        <footer><a href="Index.html">Volver a Cuestionario</a></footer>
+
+</body>
+
+</html>
